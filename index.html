@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <title>Jogo da Velha - PS Edition</title>
+</head>
+<body>
+    <header>
+        <h1><span></span></h1>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td onclick="jogar('0')" style="border-top: none;border-left: none;"></td>
+                <td onclick="jogar('1')" style="border-top: none;"></td>
+                <td onclick="jogar('2')" style="border-top: none;border-right: none;"></td>
+            </tr>
+            <tr>
+                <td onclick="jogar('3')" style="border-left: none;"></td>
+                <td onclick="jogar('4')"></td>
+                <td onclick="jogar('5')" style="border-right: none;"></td>
+            </tr>
+            <tr>
+                <td onclick="jogar('6')" style="border-left: none;border-bottom: none;"></td>
+                <td onclick="jogar('7')" style="border-bottom: none;"></td>
+                <td onclick="jogar('8')" style="border-bottom: none;border-right: none;"></td>
+            </tr>
+        </table>
+        <button class="material-symbols-outlined" onclick="reiniciar()">Refresh</button>
+    </main>
+    <script src="funcoes.js"></script>
+</body>
+</html>
